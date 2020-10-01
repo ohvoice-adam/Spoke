@@ -217,7 +217,8 @@ class ScriptEditor extends React.Component {
     return (
       <div>
         <div style={segmentInfo.charCount > 1600 ? { color: "red" } : {}}>
-          Total characters: {segmentInfo.charCount}
+            <b>IMPORTANT! Due to changes in our phone service provider's policy, you are now REQUIRED to include the following text at the end of your initial message: "Reply STOP to unsubscribe"</b><br>
+	    Total characters: {segmentInfo.charCount}
           {segmentInfo.charCount > 1600 ? (
             <span> Exceeded MMS maximum </span>
           ) : null}
